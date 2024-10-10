@@ -1,0 +1,16 @@
+<table>
+    <thead>
+        <tr>
+            <th>First name</th>
+            <th>Last name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%result forEach row(row=>{%>
+        <tr>
+            <td> <% = row.first_name %></td>
+            <td> <% = row.last_name %></td>
+        </tr>
+    <%});%>
+    </tbody>
+</table>
